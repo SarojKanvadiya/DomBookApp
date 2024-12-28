@@ -65,9 +65,10 @@ function displayAvailableBooks(arr) {
         let days = document.createElement("h4");
         days.textContent = `Borrowed Days: ${el.borrowedDays}`
 
-        
+        let borroebook = document.createElement("button")
+        borroebook.textContent ="Borrow Book"
 
-        card.append(title, author, category, status, days, )
+        card.append(title, author, category, status, days,borroebook )
 
         cont.append(card)
 
