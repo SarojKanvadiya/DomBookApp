@@ -31,6 +31,13 @@ async function getData() {
 
 }
 
+let availbtn = document.getElementById("availblebooks");
+availbtn.addEventListener("click", async function () {
+    displayAvailableBooks(arr)
+
+    
+})
+
 window.onload = async () => {
     let arr1 = await getData()
     displayAvailableBooks(arr1)
