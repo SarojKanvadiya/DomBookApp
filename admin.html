@@ -5,12 +5,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles/style.css">
-    <title>Mini Book Management App</title>
+    <link rel="stylesheet" href="./styles/admin.css">
+    <title>Admin Management Page</title>
 </head>
 
 <body>
     <div id="nav"></div>
+    <div id="addbooksform">
+        <form id="form">
+            <h2>Add Books Here..</h2>
+            <input type="url" id="image" placeholder="Enter Book Url">
+            <input type="text" id="title" placeholder="Enter book Title">
+            <input type="text" id="author" placeholder="Enter Author" >
+            <select id="category">
+<option value="">Select Category</option>
+<option value="fiction">Fiction</option>
+<option value="comedy">Comedy</option>
+<option value="technical">Technical</option>
+
+            </select>
+            <!-- <input type="number" id="borrowdays" placeholder="Enter Borrowdays"> -->
+            <input type="submit" id="submit" value="Add Book">
+        </form>
+    </div>
+
+    <div id="cont"></div>
 </body>
 <script src="./scripts/navbar.js"></script>
+<script type="module" src="./scripts/admin.js"></script>
 
 </html>

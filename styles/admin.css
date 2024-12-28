@@ -1,0 +1,12 @@
+#cont{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    width: 80%;
+    margin: 20px auto;
+
+}
+.card{
+    padding: 10px;
+    border: 2px solid blue;
+}

@@ -21,6 +21,15 @@ a{
 a:hover{
     color: rgb(160, 107, 37);
 }
+#loginform,#addbooksform{
+    width: 50%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
 
 form{
 
@@ -29,4 +38,14 @@ form{
     justify-content: center;
     align-items: center;
     gap: 10px;
+}
+select{
+    width: 100%;
+    padding: 2px;
+}
+
+#buttondiv{
+    width: 80%;
+    margin: 10px;
+    padding: 10px
 }

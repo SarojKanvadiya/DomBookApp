@@ -7,10 +7,12 @@ form.addEventListener("submit", function(){
 
     if(email=="admin@empher.com" && password=="empher@123"){
         alert("Logged in as Admin.")
+        localStorage.setItem("loginData", JSON.stringify(loginObj))
         window.location.href ="admin.html";
     }else if(email=="user@empher.com"){
 
-        if(password =="user@123"){1
+        if(password =="user@123"){
+            
             window.location.href ="books.html";
             localStorage.setItem("loginData", JSON.stringify(loginObj))
         }
