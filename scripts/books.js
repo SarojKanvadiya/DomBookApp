@@ -67,6 +67,9 @@ function displayAvailableBooks(arr) {
 
         let borroebook = document.createElement("button")
         borroebook.textContent ="Borrow Book"
+        borroebook.addEventListener("click", function(){
+          let borrowday=  prompt("Enter Borrow Day (maximum 10 days)");
+        })
 
         card.append(title, author, category, status, days,borroebook )
 
